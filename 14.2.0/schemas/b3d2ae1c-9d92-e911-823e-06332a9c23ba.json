@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "b3d2ae1c-9d92-e911-823e-06332a9c23ba",
+  "title": "Transaction Authorization",
+  "description": "The approval of a transaction by an authorized party or system, allowing it to proceed for execution after required checks are completed.",
+  "x-version": "1.0.0",
+  "x-object-type": "Class",
+  "x-super-type": "751633c0-9b92-e911-823e-06332a9c23ba",
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.504Z",
+  "x-position": null,
+  "type": "object",
+  "required": [
+    "TransactionAuthorizationStatus"
+  ],
+  "properties": {
+    "TransactionAuthorizationStatus": {
+      "type": "string",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.542Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Status",
+      "x-related-bo-id": "c7cfae85-cde3-ea11-82b8-069eade4826b",
+      "x-related-bo-name": "Status"
+    }
+  },
+  "x-relationships": [
+    {
+      "id": "08216a1d-755e-f111-8beb-a402b9460f22",
+      "target": "751633c0-9b92-e911-823e-06332a9c23ba",
+      "modality": "1:1",
+      "required": true,
+      "description": "Inherits from Transaction Assessment",
+      "x-relationship-type": "generalization",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ],
+  "x-enumeration-literals": []
+}

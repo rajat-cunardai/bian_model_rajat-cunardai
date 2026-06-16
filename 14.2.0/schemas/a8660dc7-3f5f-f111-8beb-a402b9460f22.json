@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "a8660dc7-3f5f-f111-8beb-a402b9460f22",
+  "title": "Order",
+  "description": "Order is a workstep within customer contact session that manages the creation, submission, tracking, and outcome handling of structured business orders initiated from a customer dialogue, where such orders trigger end-to-end execution in downstream service domains responsible for fulfilling governed business processes.",
+  "x-version": "1.0.0",
+  "x-object-type": "Class",
+  "x-super-type": "59780d9c-dd87-f011-8bba-a402b9460f22",
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.504Z",
+  "x-position": null,
+  "type": "object",
+  "required": [
+    "SessionContext",
+    "CustomerData",
+    "OrderType",
+    "ChannelContext",
+    "WorkflowIntent"
+  ],
+  "properties": {
+    "SessionContext": {
+      "type": "string",
+      "description": "Continuity of the live customer conversation",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.541Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Text",
+      "x-related-bo-id": "98855d84-16ee-eb11-8336-0692f5211cfd",
+      "x-related-bo-name": "Text"
+    },
+    "CustomerData": {
+      "type": "string",
+      "description": "Identity and personal attributes of the customer",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.541Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Text",
+      "x-related-bo-id": "98855d84-16ee-eb11-8336-0692f5211cfd",
+      "x-related-bo-name": "Text"
+    },
+    "OrderType": {
+      "type": "string",
+      "description": "Classification of the structured business request",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.541Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Text",
+      "x-related-bo-id": "98855d84-16ee-eb11-8336-0692f5211cfd",
+      "x-related-bo-name": "Text"
+    },
+    "ChannelContext": {
+      "type": "string",
+      "description": "Medium and environment of customer interaction",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.541Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Text",
+      "x-related-bo-id": "98855d84-16ee-eb11-8336-0692f5211cfd",
+      "x-related-bo-name": "Text"
+    },
+    "WorkflowIntent": {
+      "type": "string",
+      "description": "Desired business outcome from the customer’s perspective",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.541Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "Text",
+      "x-related-bo-id": "98855d84-16ee-eb11-8336-0692f5211cfd",
+      "x-related-bo-name": "Text"
+    }
+  },
+  "x-relationships": [
+    {
+      "id": "571191cd-3f5f-f111-8beb-a402b9460f22",
+      "target": "59780d9c-dd87-f011-8bba-a402b9460f22",
+      "modality": "1:1",
+      "required": true,
+      "description": "Inherits from Customer Contact Session Workstep",
+      "x-relationship-type": "generalization",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ],
+  "x-enumeration-literals": []
+}
