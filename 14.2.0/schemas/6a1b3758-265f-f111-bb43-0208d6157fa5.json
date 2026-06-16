@@ -1,0 +1,323 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "6a1b3758-265f-f111-bb43-0208d6157fa5",
+  "title": "LogTypeValues",
+  "description": "",
+  "x-version": "1.0.0",
+  "x-object-type": "Enumeration",
+  "x-super-type": null,
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.520Z",
+  "x-position": null,
+  "type": "object",
+  "required": [],
+  "properties": {},
+  "x-relationships": [],
+  "x-enumeration-literals": [
+    {
+      "id": "2064f55e-265f-f111-bb43-0208d6157fa5",
+      "name": "Audit Log",
+      "description": "Records actions and changes for compliance, traceability, and regulatory purposes.\r\n\r\nComment:\r\nExample: Log of who approved a loan disbursement and when.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "c5887476-265f-f111-bb43-0208d6157fa5",
+      "name": "Activity Log",
+      "description": "Records user, customer, or system activities related to transactions.\r\n\r\nComment:\r\nExample: Customer initiates a funds transfer through online banking.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "d0887476-265f-f111-bb43-0208d6157fa5",
+      "name": "Processing Log",
+      "description": "Records the processing steps and status of a transaction.\r\n\r\nComment:\r\nExample: Transaction received, validated, posted, and settled.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "722ac07f-265f-f111-bb43-0208d6157fa5",
+      "name": "Security Log",
+      "description": "Records security-related events and access attempts.\r\n\r\nComment:\r\nExample: Failed login before a payment transaction is initiated.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ecc01287-265f-f111-bb43-0208d6157fa5",
+      "name": "Error Log",
+      "description": "Records transaction failures, exceptions, and system errors.\r\n\r\nComment:\r\nExample: Payment rejected due to insufficient funds.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "f7c01287-265f-f111-bb43-0208d6157fa5",
+      "name": "Exception Log",
+      "description": "Records unusual or abnormal transaction events requiring attention.\r\n\r\nComment:\r\nExample: Large transaction flagged for review.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "2b794790-265f-f111-bb43-0208d6157fa5",
+      "name": "Authorization Log",
+      "description": "Records approval, rejection, and authorization activities.\r\n\r\nComment:\r\nExample: Manager approves a high-value transfer.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "efceaa96-265f-f111-bb43-0208d6157fa5",
+      "name": "Validation Log",
+      "description": "Records execution of business rules and validation checks.\r\n\r\nComment:\r\nExample: Account ownership verification completed successfully.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "1fcc6f9e-265f-f111-bb43-0208d6157fa5",
+      "name": "Settlement Log",
+      "description": "Records settlement and clearing activities.\r\n\r\nComment: \r\nExample: Interbank payment settled through a clearing network.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "2acc6f9e-265f-f111-bb43-0208d6157fa5",
+      "name": "Reconciliation Log",
+      "description": "Records matching and reconciliation results between systems.\r\n\r\nComment:\r\nExample: Daily reconciliation of card transactions against settlement records.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "641142aa-265f-f111-bb43-0208d6157fa5",
+      "name": "Integration Log",
+      "description": "Records messages exchanged between systems and applications.\r\n\r\nComment:\r\nExample: Core banking system sends transaction details to the payment gateway.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "77bae8b1-265f-f111-bb43-0208d6157fa5",
+      "name": "Communication Log",
+      "description": "Records notifications and communications related to transactions.\r\n\r\nComment:\r\nExample: SMS confirmation sent after payment completion.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "82bae8b1-265f-f111-bb43-0208d6157fa5",
+      "name": "Access Log",
+      "description": "Records access to transaction records and services.\r\n\r\nComment:\r\nExample: Operations staff views transaction details.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "d817fdb7-265f-f111-bb43-0208d6157fa5",
+      "name": "Monitoring Log",
+      "description": "Records performance and operational monitoring information.\r\n\r\nComment:\r\nExample: Transaction processing time exceeds threshold.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "54be34c1-265f-f111-bb43-0208d6157fa5",
+      "name": "Fraud Monitoring Log",
+      "description": "Records fraud detection and suspicious activity events.\r\n\r\nComment:\r\nExample: Transaction flagged by anti-money laundering rules.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "e60026c8-265f-f111-bb43-0208d6157fa5",
+      "name": "Compliance Log",
+      "description": "Records activities performed to satisfy regulatory requirements.\r\n\r\nComment:\r\nExample: Sanctions screening completed before transaction execution.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "da5722ce-265f-f111-bb43-0208d6157fa5",
+      "name": "Status Change Log",
+      "description": "Records changes in transaction lifecycle status.\r\n\r\nComment:\r\nExample: Transaction status changes from Pending to Executed.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "967f71d7-265f-f111-bb43-0208d6157fa5",
+      "name": "Correction Log",
+      "description": "Records transaction amendments, reversals, or adjustments.\r\n\r\nComment:\r\nExample: Incorrect payment reversed and reposted.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a17f71d7-265f-f111-bb43-0208d6157fa5",
+      "name": "Archive Log",
+      "description": "Stores historical transaction records for long-term retention.\r\n\r\nComment:\r\nExample:\r\nClosed-year transaction history archived for regulatory retention.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "2064f55e-265f-f111-bb43-0208d6157fa5",
+      "name": "Audit Log",
+      "description": "Records actions and changes for compliance, traceability, and regulatory purposes.\r\n\r\nComment:\r\nExample: Log of who approved a loan disbursement and when.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "c5887476-265f-f111-bb43-0208d6157fa5",
+      "name": "Activity Log",
+      "description": "Records user, customer, or system activities related to transactions.\r\n\r\nComment:\r\nExample: Customer initiates a funds transfer through online banking.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "d0887476-265f-f111-bb43-0208d6157fa5",
+      "name": "Processing Log",
+      "description": "Records the processing steps and status of a transaction.\r\n\r\nComment:\r\nExample: Transaction received, validated, posted, and settled.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "722ac07f-265f-f111-bb43-0208d6157fa5",
+      "name": "Security Log",
+      "description": "Records security-related events and access attempts.\r\n\r\nComment:\r\nExample: Failed login before a payment transaction is initiated.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ecc01287-265f-f111-bb43-0208d6157fa5",
+      "name": "Error Log",
+      "description": "Records transaction failures, exceptions, and system errors.\r\n\r\nComment:\r\nExample: Payment rejected due to insufficient funds.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "f7c01287-265f-f111-bb43-0208d6157fa5",
+      "name": "Exception Log",
+      "description": "Records unusual or abnormal transaction events requiring attention.\r\n\r\nComment:\r\nExample: Large transaction flagged for review.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "2b794790-265f-f111-bb43-0208d6157fa5",
+      "name": "Authorization Log",
+      "description": "Records approval, rejection, and authorization activities.\r\n\r\nComment:\r\nExample: Manager approves a high-value transfer.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "efceaa96-265f-f111-bb43-0208d6157fa5",
+      "name": "Validation Log",
+      "description": "Records execution of business rules and validation checks.\r\n\r\nComment:\r\nExample: Account ownership verification completed successfully.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "1fcc6f9e-265f-f111-bb43-0208d6157fa5",
+      "name": "Settlement Log",
+      "description": "Records settlement and clearing activities.\r\n\r\nComment: \r\nExample: Interbank payment settled through a clearing network.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "2acc6f9e-265f-f111-bb43-0208d6157fa5",
+      "name": "Reconciliation Log",
+      "description": "Records matching and reconciliation results between systems.\r\n\r\nComment:\r\nExample: Daily reconciliation of card transactions against settlement records.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "641142aa-265f-f111-bb43-0208d6157fa5",
+      "name": "Integration Log",
+      "description": "Records messages exchanged between systems and applications.\r\n\r\nComment:\r\nExample: Core banking system sends transaction details to the payment gateway.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "77bae8b1-265f-f111-bb43-0208d6157fa5",
+      "name": "Communication Log",
+      "description": "Records notifications and communications related to transactions.\r\n\r\nComment:\r\nExample: SMS confirmation sent after payment completion.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "82bae8b1-265f-f111-bb43-0208d6157fa5",
+      "name": "Access Log",
+      "description": "Records access to transaction records and services.\r\n\r\nComment:\r\nExample: Operations staff views transaction details.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "d817fdb7-265f-f111-bb43-0208d6157fa5",
+      "name": "Monitoring Log",
+      "description": "Records performance and operational monitoring information.\r\n\r\nComment:\r\nExample: Transaction processing time exceeds threshold.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "54be34c1-265f-f111-bb43-0208d6157fa5",
+      "name": "Fraud Monitoring Log",
+      "description": "Records fraud detection and suspicious activity events.\r\n\r\nComment:\r\nExample: Transaction flagged by anti-money laundering rules.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "e60026c8-265f-f111-bb43-0208d6157fa5",
+      "name": "Compliance Log",
+      "description": "Records activities performed to satisfy regulatory requirements.\r\n\r\nComment:\r\nExample: Sanctions screening completed before transaction execution.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "da5722ce-265f-f111-bb43-0208d6157fa5",
+      "name": "Status Change Log",
+      "description": "Records changes in transaction lifecycle status.\r\n\r\nComment:\r\nExample: Transaction status changes from Pending to Executed.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "967f71d7-265f-f111-bb43-0208d6157fa5",
+      "name": "Correction Log",
+      "description": "Records transaction amendments, reversals, or adjustments.\r\n\r\nComment:\r\nExample: Incorrect payment reversed and reposted.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a17f71d7-265f-f111-bb43-0208d6157fa5",
+      "name": "Archive Log",
+      "description": "Stores historical transaction records for long-term retention.\r\n\r\nComment:\r\nExample:\r\nClosed-year transaction history archived for regulatory retention.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ]
+}

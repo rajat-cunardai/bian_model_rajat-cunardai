@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "f67fbf82-405f-f111-bb43-02ee57ff9151",
+  "title": "LogMethodTypeValues",
+  "description": "",
+  "x-version": "1.0.0",
+  "x-object-type": "Enumeration",
+  "x-super-type": null,
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.520Z",
+  "x-position": null,
+  "type": "object",
+  "required": [],
+  "properties": {},
+  "x-relationships": [],
+  "x-enumeration-literals": [
+    {
+      "id": "bf4e3292-405f-f111-bb43-02ee57ff9151",
+      "name": "Real-time Log Method",
+      "description": "Records log entries immediately when an event or transaction occurs.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a4df50b9-405f-f111-bb43-02ee57ff9151",
+      "name": "Batch Log Method",
+      "description": "Collects log entries and records them together at scheduled intervals.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a9df50b9-405f-f111-bb43-02ee57ff9151",
+      "name": "Event-Based Log Method",
+      "description": "Creates log entries when specific business or system events occur.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "dbfbc1c6-405f-f111-bb43-02ee57ff9151",
+      "name": "Scheduled Log Method",
+      "description": "Records logs at predefined times or frequencies.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "4d88f4d1-405f-f111-bb43-02ee57ff9151",
+      "name": "Synchronous Log Method",
+      "description": "Writes log records as part of the transaction process before completion.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "5288f4d1-405f-f111-bb43-02ee57ff9151",
+      "name": "Asynchronous Log Method",
+      "description": "Writes log records separately from the transaction process, often in the background.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "752078dc-405f-f111-bb43-02ee57ff9151",
+      "name": "Stream-Based Log Method",
+      "description": "Continuously captures and processes log events as a data stream.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "707cb4e5-405f-f111-bb43-02ee57ff9151",
+      "name": "Incremental Log Method",
+      "description": "Records only new or changed information since the last log update.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ac4500ed-405f-f111-bb43-02ee57ff9151",
+      "name": "Snapshot Log Method",
+      "description": "Captures the complete state of data or a system at a specific point in time.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "60a9f0f3-405f-f111-bb43-02ee57ff9151",
+      "name": "On-Demand Log Method",
+      "description": "Generates logs when requested by a user, application, or audit process.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "714320fb-405f-f111-bb43-02ee57ff9151",
+      "name": "Exception Log Method",
+      "description": "Records only errors, failures, or unusual events.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "7a39cd03-415f-f111-bb43-02ee57ff9151",
+      "name": "Audit Log Method",
+      "description": "Records activities specifically for compliance, traceability, and auditing purposes.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "bf4e3292-405f-f111-bb43-02ee57ff9151",
+      "name": "Real-time Log Method",
+      "description": "Records log entries immediately when an event or transaction occurs.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a4df50b9-405f-f111-bb43-02ee57ff9151",
+      "name": "Batch Log Method",
+      "description": "Collects log entries and records them together at scheduled intervals.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a9df50b9-405f-f111-bb43-02ee57ff9151",
+      "name": "Event-Based Log Method",
+      "description": "Creates log entries when specific business or system events occur.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "dbfbc1c6-405f-f111-bb43-02ee57ff9151",
+      "name": "Scheduled Log Method",
+      "description": "Records logs at predefined times or frequencies.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "4d88f4d1-405f-f111-bb43-02ee57ff9151",
+      "name": "Synchronous Log Method",
+      "description": "Writes log records as part of the transaction process before completion.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "5288f4d1-405f-f111-bb43-02ee57ff9151",
+      "name": "Asynchronous Log Method",
+      "description": "Writes log records separately from the transaction process, often in the background.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "752078dc-405f-f111-bb43-02ee57ff9151",
+      "name": "Stream-Based Log Method",
+      "description": "Continuously captures and processes log events as a data stream.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "707cb4e5-405f-f111-bb43-02ee57ff9151",
+      "name": "Incremental Log Method",
+      "description": "Records only new or changed information since the last log update.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ac4500ed-405f-f111-bb43-02ee57ff9151",
+      "name": "Snapshot Log Method",
+      "description": "Captures the complete state of data or a system at a specific point in time.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "60a9f0f3-405f-f111-bb43-02ee57ff9151",
+      "name": "On-Demand Log Method",
+      "description": "Generates logs when requested by a user, application, or audit process.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "714320fb-405f-f111-bb43-02ee57ff9151",
+      "name": "Exception Log Method",
+      "description": "Records only errors, failures, or unusual events.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "7a39cd03-415f-f111-bb43-02ee57ff9151",
+      "name": "Audit Log Method",
+      "description": "Records activities specifically for compliance, traceability, and auditing purposes.",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ]
+}
