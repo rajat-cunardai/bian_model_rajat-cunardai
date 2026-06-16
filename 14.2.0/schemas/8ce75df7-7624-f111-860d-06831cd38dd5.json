@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "8ce75df7-7624-f111-860d-06831cd38dd5",
+  "title": "Underwriting Assessment",
+  "description": "An underwriting assessment is the evaluation process conducted by a lender, insurer, or financial institution to determine the risk, eligibility, and terms of providing credit, insurance, or a financial product.",
+  "x-version": "1.0.0",
+  "x-object-type": "Class",
+  "x-super-type": "ea36f45c-1656-e911-8237-060aad038e48",
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.506Z",
+  "x-position": null,
+  "type": "object",
+  "required": [
+    "UnderwritingAssessmentType"
+  ],
+  "properties": {
+    "UnderwritingAssessmentType": {
+      "type": "string",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": "2026-06-16T06:23:04.548Z",
+      "x-previous-value": null,
+      "x-multi-valued": false,
+      "x-is-unique": true,
+      "x-min-occurs": 1,
+      "x-max-occurs": 1,
+      "x-attr-type": "UnderwritingAssessmentTypeValues",
+      "x-related-bo-id": "c831ef6e-7724-f111-860d-06831cd38dd5",
+      "x-related-bo-name": "UnderwritingAssessmentTypeValues"
+    }
+  },
+  "x-relationships": [
+    {
+      "id": "a4a90fef-7c57-e911-8237-0645314e65ac",
+      "target": "ea36f45c-1656-e911-8237-060aad038e48",
+      "modality": "1:1",
+      "required": true,
+      "description": "Inherits from Assessment",
+      "x-relationship-type": "generalization",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ac312f06-7724-f111-860d-06831cd38dd5",
+      "target": "ea36f45c-1656-e911-8237-060aad038e48",
+      "modality": "1:1",
+      "required": true,
+      "description": "Inherits from Assessment",
+      "x-relationship-type": "generalization",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "4e45f46d-c656-e911-8237-06ecaacb4c68",
+      "target": "3225a15a-2356-e911-8237-060aad038e48",
+      "modality": "1:1",
+      "required": false,
+      "description": "LoanToUnderwrite",
+      "x-relationship-type": "association",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ],
+  "x-enumeration-literals": []
+}
