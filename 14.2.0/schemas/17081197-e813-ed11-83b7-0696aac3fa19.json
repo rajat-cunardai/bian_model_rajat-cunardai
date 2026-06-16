@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "17081197-e813-ed11-83b7-0696aac3fa19",
+  "title": "Transaction_TransactionRelationshipTypeValues",
+  "description": "",
+  "x-version": "1.0.0",
+  "x-object-type": "Enumeration",
+  "x-super-type": null,
+  "x-status": "stable",
+  "x-modified-by": null,
+  "x-modified-date": "2026-06-16T06:23:04.519Z",
+  "x-position": null,
+  "type": "object",
+  "required": [],
+  "properties": {},
+  "x-relationships": [],
+  "x-enumeration-literals": [
+    {
+      "id": "91a2c7ae-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event procedes Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a6911fba-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event follows Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ab911fba-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event causes Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "91a2c7ae-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event procedes Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "a6911fba-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event follows Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    },
+    {
+      "id": "ab911fba-e813-ed11-83b7-0696aac3fa19",
+      "name": "Event causes Event",
+      "description": "",
+      "x-status": "stable",
+      "x-modified-by": null,
+      "x-modified-date": null
+    }
+  ]
+}
