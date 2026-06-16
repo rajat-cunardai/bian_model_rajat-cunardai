@@ -1,23 +1,23 @@
 {
   "uid": "2ea0b372-9b2e-f111-8be1-a402b9460f22",
-  "name": "Initiate Customer Access and Session",
+  "name": "Initiate Customer Access and Session_Basic Flow",
   "groupUid": "12094037-6d7e-f011-8bb9-a402b9460f22",
   "groupName": "AI Readiness",
   "status": "Provisional",
   "steps": [
     {
       "callerSd": "Customer Workbench",
-      "receiverSd": "Initiate Contact",
+      "receiverSd": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/315519",
       "so": "eBranch Operations"
     },
     {
       "callerSd": "eBranch Operations",
-      "receiverSd": "Initiate Inbound Exchange",
+      "receiverSd": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/315521",
       "so": "Contact Handler"
     },
     {
       "callerSd": "Contact Handler",
-      "receiverSd": "Initiate Session",
+      "receiverSd": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/315528",
       "so": "Session Dialogue"
     },
     {
@@ -27,8 +27,9 @@
     },
     {
       "callerSd": "Contact Handler",
-      "receiverSd": "Initiate Session",
+      "receiverSd": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/315528",
       "so": "Customer Product and Service Directory"
     }
-  ]
+  ],
+  "organisation": "BIAN"
 }

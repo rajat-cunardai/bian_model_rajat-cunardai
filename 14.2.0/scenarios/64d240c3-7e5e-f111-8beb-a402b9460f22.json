@@ -1,0 +1,45 @@
+{
+  "uid": "64d240c3-7e5e-f111-8beb-a402b9460f22",
+  "name": "Execute Customer Onboarding_Basic Flow",
+  "groupUid": "12094037-6d7e-f011-8bb9-a402b9460f22",
+  "groupName": "AI Readiness",
+  "status": "Provisional",
+  "steps": [
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Onboarding",
+      "so": "Party Lifecycle Management"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Party Reference Data Directory"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Party Lifecycle Management"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Party Lifecycle Management"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Party Lifecycle Management"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Party Reference Data Directory"
+    },
+    {
+      "callerSd": "Party Lifecycle Management",
+      "receiverSd": "Initiate Party Relationship Administrative Plan",
+      "so": "Session Dialogue"
+    }
+  ],
+  "organisation": "BIAN"
+}

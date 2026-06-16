@@ -1,0 +1,40 @@
+{
+  "uid": "f2b01c2b-6e7e-f011-8bb9-a402b9460f22",
+  "name": "Schedule Recurring Payment from Current Account",
+  "groupUid": "12094037-6d7e-f011-8bb9-a402b9460f22",
+  "groupName": "AI Readiness",
+  "status": "Provisional",
+  "steps": [
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Current Account"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Current Account"
+    },
+    {
+      "callerSd": "Current Account",
+      "receiverSd": "Initiate Payment",
+      "so": "Payment Order Initiation"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Current Account"
+    },
+    {
+      "callerSd": "Current Account",
+      "receiverSd": "Initiate Status Tracking",
+      "so": "Position Keeping"
+    },
+    {
+      "callerSd": "Current Account",
+      "receiverSd": "Initiate Transaction Posting",
+      "so": "Account Facility"
+    }
+  ],
+  "organisation": "BIAN"
+}

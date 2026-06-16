@@ -1,0 +1,40 @@
+{
+  "uid": "a36c0e33-5f47-f111-bb23-021f223cec41",
+  "name": "Schedule Recurring Deposit for Term Deposit",
+  "groupUid": "12094037-6d7e-f011-8bb9-a402b9460f22",
+  "groupName": "AI Readiness",
+  "status": "Provisional",
+  "steps": [
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Term Deposit"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Term Deposit"
+    },
+    {
+      "callerSd": "Term Deposit",
+      "receiverSd": "Initiate Deposit",
+      "so": "Payment Order Initiation"
+    },
+    {
+      "callerSd": "Term Deposit",
+      "receiverSd": "Initiate Status Tracking",
+      "so": "Position Keeping"
+    },
+    {
+      "callerSd": "Term Deposit",
+      "receiverSd": "Initiate Transaction Posting",
+      "so": "Account Facility"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Term Deposit"
+    }
+  ],
+  "organisation": "BIAN"
+}

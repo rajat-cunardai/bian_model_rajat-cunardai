@@ -1,0 +1,547 @@
+{
+  "id": "xxckbk1u",
+  "name": "Position Keeping",
+  "description": "",
+  "controlRecord": {
+    "id": "hzuwiuin",
+    "name": "CR Financial Position Log Instance Record",
+    "description": "Maintain a log of transactions or activity, typically a financial account/journal or a log of activity to support behavioral analysis within Position Keeping.",
+    "attributes": [
+      {
+        "id": "82f38f34-2c5f-f111-bb43-02ee57ff9151",
+        "name": "FinancialPositionLogInstanceRecordIdentification",
+        "type": "Text",
+        "required": true,
+        "description": "Unique identifier of a control record instance",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "87f38f34-2c5f-f111-bb43-02ee57ff9151",
+        "name": "CounterpartyReference",
+        "type": "InvolvedParty",
+        "required": true,
+        "description": "Reference to a counterparty for the log if appropriate (e.g. merchant reference, card network reference)",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "88f38f34-2c5f-f111-bb43-02ee57ff9151",
+        "name": "CustomerReference",
+        "type": "InvolvedParty",
+        "required": true,
+        "description": "Reference to the product or service account holder/customer for the log if appropriate",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "3fd086eb-455f-f111-bb43-02ee57ff9151",
+        "name": "LogType",
+        "type": "LogTypeValues",
+        "required": true,
+        "description": "Type of Log",
+        "relatedBusinessObjectName": "Log",
+        "relatedBusinessObjectAttrName": "Log Type",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "fad76e9e-475f-f111-bb43-02ee57ff9151",
+        "name": "LogMethod",
+        "type": "LogMethodTypeValues",
+        "required": true,
+        "description": "The mechanism or technique used to collect, record, and maintain log entries for monitoring, auditing, troubleshooting, and tracking business or system activities.",
+        "relatedBusinessObjectName": "Log",
+        "relatedBusinessObjectAttrName": "Log Method",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "870aff25-485f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogDate",
+        "type": "DateTime",
+        "required": true,
+        "description": "Key dates of Transaction Log",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Date",
+        "referenceAspect": "iso20022",
+        "referenceName": "ISODateTime",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "a5f2c54a-485f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogType",
+        "type": "Text",
+        "required": true,
+        "description": "Type of Transaction Log",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Type",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "7487b83e-4f5f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogStatus",
+        "type": "Status",
+        "required": true,
+        "description": "Status of Transaction Log",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Status",
+        "referenceAspect": "iso20022",
+        "referenceName": "Status",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "ce72ec47-4f5f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogDescription",
+        "type": "Text",
+        "required": true,
+        "description": "A brief explanation of the transaction.",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Description",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "1bf69d56-4f5f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogPeriod",
+        "type": "DateTimePeriod",
+        "required": true,
+        "description": "Period that transaction log is recorded",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Period",
+        "referenceAspect": "iso20022",
+        "referenceName": "DateTimePeriod",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/DateTimePeriod",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      },
+      {
+        "id": "c2241f6d-4f5f-f111-bb43-02ee57ff9151",
+        "name": "TransactionLogAmount",
+        "type": "Amount",
+        "required": true,
+        "description": "The monetary value involved in the transaction log",
+        "relatedBusinessObjectName": "Transaction Log",
+        "relatedBusinessObjectAttrName": "Transaction Log Amount",
+        "referenceAspect": "iso20022",
+        "referenceName": "CurrencyAndAmount",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/CurrencyAndAmount",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.729Z"
+      }
+    ],
+    "serviceOperations": [
+      {
+        "id": "9af38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Evaluate",
+        "name": "Evaluate Financial Position Log Instance Record",
+        "description": "REST: Post",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "9bf38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Update",
+        "name": "Update Financial Position Log Instance Record",
+        "description": "REST: Put",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "9cf38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Capture",
+        "name": "Capture Financial Position Log Instance Record",
+        "description": "REST: Put",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "9df38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Execute",
+        "name": "Execute Financial Position Log Instance Record",
+        "description": "REST: Put",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "9ef38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Request",
+        "name": "Request Financial Position Log Instance Record",
+        "description": "REST: Put",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "9ff38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Exchange",
+        "name": "Exchange Financial Position Log Instance Record",
+        "description": "REST: Put",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "a0f38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Retrieve",
+        "name": "Retrieve Financial Position Log Instance Record",
+        "description": "REST: Get",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      },
+      {
+        "id": "a1f38f34-2c5f-f111-bb43-02ee57ff9151",
+        "actionTerm": "Notify",
+        "name": "Notify Financial Position Log Instance Record",
+        "description": "REST: Get",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.333Z"
+      }
+    ],
+    "logic": [],
+    "x-status": "stable"
+  },
+  "behaviourQualifiers": [
+    {
+      "id": "krxtoi3f",
+      "name": "BQ Transaction Capture Instance Record",
+      "qualifierType": "",
+      "description": "The Transaction Capture is one of the specific types of events that is recorded in the <CR>",
+      "attributes": [
+        {
+          "id": "23fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "FinancialPositionLogInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a control record instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "24fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionCaptureInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a behavior qualifier instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "25fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionType",
+          "type": "TransactionTypeValues",
+          "required": true,
+          "description": "Type of Transaction",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "26fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionDate",
+          "type": "DateTime",
+          "required": true,
+          "description": "Key dates of the Transaction",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Date",
+          "referenceAspect": "iso20022",
+          "referenceName": "ISODateTime",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "27fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionStatus",
+          "type": "Status",
+          "required": true,
+          "description": "Status of the transaction",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Status",
+          "referenceAspect": "iso20022",
+          "referenceName": "Status",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "28fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionDocument",
+          "type": "Transaction Document",
+          "required": true,
+          "description": "Specified a document that is assigned to a specific transaction.",
+          "relatedBusinessObjectName": "Transaction Document",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "29fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionLocation",
+          "type": "Transaction Location",
+          "required": true,
+          "description": "The physical, digital, or logical place where a transaction is initiated, authorized, processed, or completed.\r\n\r\nComment:\r\nExamples:\r\nATM location (e.g., Brussels ATM)\r\nBranch location (e.g., Main Branch)\r\nMerchant location (e.g., supermarket in Antwerp)\r\nOnline channel (e.g., mobile banking app, e-commerce website)",
+          "relatedBusinessObjectName": "Transaction Location",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2afed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionChannel",
+          "type": "Channel",
+          "required": true,
+          "description": "The medium or interface through which a transaction is initiated and communicated between the customer and the \r\nbank.\r\n\r\nComment:\r\nExamples: mobile banking app, internet banking, ATM, branch, call center, API.",
+          "relatedBusinessObjectName": "Channel",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2bfed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionAuthorizationStatus",
+          "type": "Status",
+          "required": true,
+          "description": "Status of transaction authorization or approval.",
+          "relatedBusinessObjectName": "Transaction Authorization",
+          "relatedBusinessObjectAttrName": "Transaction Authorization Status",
+          "referenceAspect": "iso20022",
+          "referenceName": "Status",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2cfed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "CustomerReference",
+          "type": "InvolvedParty",
+          "required": true,
+          "description": "Reference to the customer associated with the transaction.",
+          "relatedBusinessObjectName": "Transaction Involvement",
+          "relatedBusinessObjectAttrName": "Transaction Involvement Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2dfed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "CounterpartyReference",
+          "type": "InvolvedParty",
+          "required": true,
+          "description": "Reference to the other party involved in the transaction.",
+          "relatedBusinessObjectName": "Transaction Involvement",
+          "relatedBusinessObjectAttrName": "Transaction Involvement Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2efed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionDebitCreditIndicator",
+          "type": "DebitCreditIndicatorValues",
+          "required": true,
+          "description": "Indicates whether the transaction is a debit or credit.",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Debit Credit Indicator",
+          "referenceAspect": "iso20022",
+          "referenceName": "DebitCreditCode",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/DebitCreditCode",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "2ffed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionCurrency",
+          "type": "CurrencyCode",
+          "required": true,
+          "description": "Currency of the transaction.",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Currency",
+          "referenceAspect": "iso20022",
+          "referenceName": "CurrencyCode",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/CurrencyCode",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "30fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionName",
+          "type": "Name",
+          "required": true,
+          "description": "Name of Transaction",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Name",
+          "referenceAspect": "iso20022",
+          "referenceName": "Name",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Name",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "31fed950-2c5f-f111-bb43-02ee57ff9151",
+          "name": "TransactionAmount",
+          "type": "Amount",
+          "required": true,
+          "description": "The sum of money that is being transferred, paid, received, or processed in a financial operation.",
+          "relatedBusinessObjectName": "Transaction",
+          "relatedBusinessObjectAttrName": "Transaction Amount",
+          "referenceAspect": "iso20022",
+          "referenceName": "CurrencyAndAmount",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/CurrencyAndAmount",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "9bad64ea-4b5f-f111-bb43-02ee57ff9151",
+          "name": "ActionPerformed",
+          "type": "Action",
+          "required": true,
+          "description": "Action executed on the transaction.",
+          "relatedBusinessObjectName": "Action",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "52240a47-4c5f-f111-bb43-02ee57ff9151",
+          "name": "EventType",
+          "type": "Text",
+          "required": true,
+          "description": "Type of transaction event being recorded (capture, validation, authorization, posting, settlement, reversal, cancellation).",
+          "relatedBusinessObjectName": "Event",
+          "relatedBusinessObjectAttrName": "Event Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "e9f5184e-4c5f-f111-bb43-02ee57ff9151",
+          "name": "EventDate",
+          "type": "DateTime",
+          "required": true,
+          "description": "Date and time when the event occurred.",
+          "relatedBusinessObjectName": "Event",
+          "relatedBusinessObjectAttrName": "Event Date Time",
+          "referenceAspect": "iso20022",
+          "referenceName": "ISODateTime",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "5d4e8654-4c5f-f111-bb43-02ee57ff9151",
+          "name": "EventComplianceIndicator",
+          "type": "YesNoIndicator",
+          "required": true,
+          "description": "Indicates whether the event has compliance significance.",
+          "relatedBusinessObjectName": "Event",
+          "relatedBusinessObjectAttrName": "Event Compliance Indicator",
+          "referenceAspect": "iso20022",
+          "referenceName": "YesNoIndicator",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/YesNoIndicator",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        },
+        {
+          "id": "16bee561-4c5f-f111-bb43-02ee57ff9151",
+          "name": "EventAuditIndicator",
+          "type": "YesNoIndicator",
+          "required": true,
+          "description": "Indicates whether the event is subject to audit review.",
+          "relatedBusinessObjectName": "Event",
+          "relatedBusinessObjectAttrName": "Event Audit Indicator",
+          "referenceAspect": "iso20022",
+          "referenceName": "YesNoIndicator",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/YesNoIndicator",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.729Z"
+        }
+      ],
+      "serviceOperations": [
+        {
+          "id": "33fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Evaluate",
+          "name": "Evaluate Transaction Capture Instance Record",
+          "description": "REST: Post",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "34fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Update",
+          "name": "Update Transaction Capture Instance Record",
+          "description": "REST: Put",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "35fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Capture",
+          "name": "Capture Transaction Capture Instance Record",
+          "description": "REST: Put",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "36fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Execute",
+          "name": "Execute Transaction Capture Instance Record",
+          "description": "REST: Put",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "37fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Request",
+          "name": "Request Transaction Capture Instance Record",
+          "description": "REST: Put",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "38fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Exchange",
+          "name": "Exchange Transaction Capture Instance Record",
+          "description": "REST: Put",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.332Z"
+        },
+        {
+          "id": "39fed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Retrieve",
+          "name": "Retrieve Transaction Capture Instance Record",
+          "description": "REST: Get",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.333Z"
+        },
+        {
+          "id": "3afed950-2c5f-f111-bb43-02ee57ff9151",
+          "actionTerm": "Notify",
+          "name": "Notify Transaction Capture Instance Record",
+          "description": "REST: Get",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.333Z"
+        }
+      ],
+      "logic": [],
+      "x-status": "stable"
+    }
+  ],
+  "x-status": "modified",
+  "x-modified-date": "2026-06-16T06:24:07.983Z",
+  "organisation": "BIAN",
+  "version": "14.2.0"
+}

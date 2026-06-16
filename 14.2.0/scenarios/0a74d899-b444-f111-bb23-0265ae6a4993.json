@@ -1,0 +1,40 @@
+{
+  "uid": "0a74d899-b444-f111-bb23-0265ae6a4993",
+  "name": "Schedule Loan Repayment",
+  "groupUid": "12094037-6d7e-f011-8bb9-a402b9460f22",
+  "groupName": "AI Readiness",
+  "status": "Provisional",
+  "steps": [
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Consumer Loan"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Consumer Loan"
+    },
+    {
+      "callerSd": "Consumer Loan",
+      "receiverSd": "Initiate Repayment",
+      "so": "Payment Order Initiation"
+    },
+    {
+      "callerSd": "Consumer Loan",
+      "receiverSd": "Initiate Status Tracking",
+      "so": "Position Keeping"
+    },
+    {
+      "callerSd": "Consumer Loan",
+      "receiverSd": "Initiate Transaction Posting",
+      "so": "Account Facility"
+    },
+    {
+      "callerSd": "Session Dialogue",
+      "receiverSd": "Initiate Product or Service Invocation",
+      "so": "Consumer Loan"
+    }
+  ],
+  "organisation": "BIAN"
+}

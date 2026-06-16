@@ -1,0 +1,880 @@
+{
+  "id": "7nd794p5",
+  "name": "Account Facility",
+  "description": "",
+  "controlRecord": {
+    "id": "9q37esih",
+    "name": "CR Posting Administrative Plan Instance Record",
+    "description": "Handle and assign the day to day activities, capture time, costs and income for an operational unit within Account Facility.",
+    "attributes": [
+      {
+        "id": "dd7b3c22-13eb-f011-8bd8-a402b9460f22",
+        "name": "PostingAdministrativePlanInstanceRecordIdentification",
+        "type": "Text",
+        "required": true,
+        "description": "Unique identifier of a control record instance",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      },
+      {
+        "id": "d877da32-1feb-f011-8bd8-a402b9460f22",
+        "name": "SubledgerAccountIdentification",
+        "type": "Identifier",
+        "required": true,
+        "description": "Unique identifier of the subledger account (e.g., loan account, deposit account) to which the entry is posted.",
+        "referenceAspect": "iso20022",
+        "referenceName": "GenericIdentification",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/GenericIdentification",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      },
+      {
+        "id": "0f78da32-1feb-f011-8bd8-a402b9460f22",
+        "name": "SubledgerAccountRunningBalance",
+        "type": "AccountBalance",
+        "required": true,
+        "description": "Subledger account balance immediately after this entry is applied. (calculated based on what happend in BQ)",
+        "referenceAspect": "iso20022",
+        "referenceName": "Balance",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Balance",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      },
+      {
+        "id": "2fa7291d-cbeb-f011-8bd9-a402b9460f22",
+        "name": "AgreementReference",
+        "type": "Text",
+        "required": true,
+        "description": "Identifier linking agreement (eg., product agreement, customer agreement, supplier agreement, ...) to subledger account",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      },
+      {
+        "id": "b9f5e041-cceb-f011-8bd9-a402b9460f22",
+        "name": "SubJournalIdentification",
+        "type": "Identifier",
+        "required": true,
+        "description": "Unique identifier of the subjournal (often called a special journal)",
+        "referenceAspect": "iso20022",
+        "referenceName": "GenericIdentification",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/GenericIdentification",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      },
+      {
+        "id": "668df048-cdeb-f011-8bd9-a402b9460f22",
+        "name": "CollectiveGeneralLedgerAccountReference",
+        "type": "Text",
+        "required": true,
+        "description": "Reference to the general ledger account that will aggrigate the debit and credit entries of this subledger account \r\n\r\n\r\nComment:\r\n- General Ledger Account is a business object managed by Financial Accounting SD)",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:23:51.734Z"
+      }
+    ],
+    "serviceOperations": [
+      {
+        "id": "a666f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "ab66f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "b066f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "b566f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "ba66f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "bf66f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "c466f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "c966f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "ce66f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      },
+      {
+        "id": "d366f01c-26eb-f011-8bd8-a402b9460f22",
+        "actionTerm": "Activate",
+        "name": "Activate Posting Administrative Plan Instance Record",
+        "description": "",
+        "linkedLogicIds": [],
+        "x-status": "stable",
+        "x-modified-date": "2026-06-16T06:24:06.357Z"
+      }
+    ],
+    "logic": [],
+    "x-status": "stable"
+  },
+  "behaviourQualifiers": [
+    {
+      "id": "fso15v7b",
+      "name": "BQ Journal Posting Instance Record",
+      "qualifierType": "",
+      "description": "The Journal Posting is an activity that is performed as one aspect of carrying out the Account Facility.",
+      "attributes": [
+        {
+          "id": "df578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "PostingAdministrativePlanInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a control record instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "e0578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "JournalPostingInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of behavior qualifier instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "48e85486-e6eb-f011-8bd9-a402b9460f22",
+          "name": "JournalEntry",
+          "type": "Journal Entry",
+          "required": true,
+          "description": "The record of an atomic financial transaction entered in a journal.",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "391b9d8e-e6eb-f011-8bd9-a402b9460f22",
+          "name": "JournalEntryLine",
+          "type": "Journal Entry Line",
+          "required": true,
+          "description": "An individual debit or credit line within a journal entry",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "c5db1cb7-e6eb-f011-8bd9-a402b9460f22",
+          "name": "FinancialDocumentReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the document (invoice, receipt, voucher, etc.) representing the financial accounting instruction",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "1deeacc7-e6eb-f011-8bd9-a402b9460f22",
+          "name": "FinancialTransactionReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the business transaction (a real-world economic event) that triggered the accounting entry",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "889252cf-e6eb-f011-8bd9-a402b9460f22",
+          "name": "BookingSchemaReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the booking schema used for Journal Posting",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        }
+      ],
+      "serviceOperations": [
+        {
+          "id": "5ad85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Initiate",
+          "name": "Initiate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "5fd85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "64d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "69d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "6ed85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "73d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "78d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "7dd85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "82d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "87d85e4a-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Journal Posting Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        }
+      ],
+      "logic": [],
+      "x-status": "stable"
+    },
+    {
+      "id": "t5v4w0ng",
+      "name": "BQ Arrangement Account Entry Instance Record",
+      "qualifierType": "",
+      "description": "A collection of one or more clerical routines that are to be followed to administer the operational unit/function\r\n\r\nExamples: Time-sheet recording",
+      "attributes": [
+        {
+          "id": "430a04c4-80ec-f011-8bd9-a402b9460f22",
+          "name": "PostingAdministrativePlanInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a control record instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "fba9b882-82ec-f011-8bd9-a402b9460f22",
+          "name": "ArrangementAccountEntryInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of behavior qualifier instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "7fd705b0-85ec-f011-8bd9-a402b9460f22",
+          "name": "ArrangementAccount",
+          "type": "Account",
+          "required": true,
+          "description": "Subledger Account which holds the financial position of one or more arrangements",
+          "referenceAspect": "iso20022",
+          "referenceName": "Account",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Account",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "72def7b8-85ec-f011-8bd9-a402b9460f22",
+          "name": "AccountEntry",
+          "type": "Account Entry",
+          "required": true,
+          "description": "An entry posted/booked in the (subledger) account.",
+          "referenceAspect": "iso20022",
+          "referenceName": "AccountEntry",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/AccountEntry",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "d3165b3a-86ec-f011-8bd9-a402b9460f22",
+          "name": "FinancialAccountingTransactionReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to Financial Accounting Transaction",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "0ed0c84b-86ec-f011-8bd9-a402b9460f22",
+          "name": "FinancialDocumentReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the document (invoice, receipt, voucher, etc.) representing the financial accounting transaction",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "007d13ac-86ec-f011-8bd9-a402b9460f22",
+          "name": "JournalPostingReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to Journal Entry",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        }
+      ],
+      "serviceOperations": [
+        {
+          "id": "80eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "86eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "8beb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "90eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "95eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "9aeb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "9feb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "a4eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "a9eb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "aeeb55fd-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Arrangement Account Entry Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        }
+      ],
+      "logic": [],
+      "x-status": "stable"
+    },
+    {
+      "id": "0vqrj4p6",
+      "name": "BQ Reconciliation Instance Record",
+      "qualifierType": "",
+      "description": "The Reconciliation is an activity that is performed as one aspect of carrying out the Account Facility.",
+      "attributes": [
+        {
+          "id": "ca578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "PostingAdministrativePlanInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a control record instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "cb578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "ReconciliationInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of behavior qualifier instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "9d925240-8cec-f011-8bd9-a402b9460f22",
+          "name": "ReconciliationArrangement",
+          "type": "Arrangement",
+          "required": true,
+          "description": "Details of Reconciliation routine arrangement (configurations)",
+          "referenceAspect": "iso20022",
+          "referenceName": "Obligation",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Obligation",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "a2925240-8cec-f011-8bd9-a402b9460f22",
+          "name": "ReconciliationInstruction",
+          "type": "Instruction",
+          "required": true,
+          "description": "Details of the request/service call made at the Reconciliation routine level",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "a7925240-8cec-f011-8bd9-a402b9460f22",
+          "name": "ReconciliationTransaction",
+          "type": "Transaction",
+          "required": true,
+          "description": "Details of the transaction resulting from the fulfillment of the Reconciliation routine",
+          "referenceAspect": "iso20022",
+          "referenceName": "ObligationFulfilment",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ObligationFulfilment",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "ac925240-8cec-f011-8bd9-a402b9460f22",
+          "name": "ReconciliationInvolvementReference",
+          "type": "InvolvedParty",
+          "required": true,
+          "description": "Reference to involved parties and their specific role in any invoked Reconciliation routine",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        }
+      ],
+      "serviceOperations": [
+        {
+          "id": "7b928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "80928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "85928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "8a928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "8f928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "94928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "99928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "9e928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "a3928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "a8928596-8bec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Reconciliation Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        }
+      ],
+      "logic": [],
+      "x-status": "stable"
+    },
+    {
+      "id": "aqhnj89u",
+      "name": "BQ Accounting Instruction Capture Instance Record",
+      "qualifierType": "",
+      "description": "The Accounting Instruction Capture is an activity that is performed as one aspect of carrying out the Account Facility.",
+      "attributes": [
+        {
+          "id": "f4578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "PostingAdministrativePlanInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of a control record instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "f5578b6f-25eb-f011-8bd8-a402b9460f22",
+          "name": "AccountingInstructionCaptureInstanceRecordIdentification",
+          "type": "Text",
+          "required": true,
+          "description": "Unique identifier of behavior qualifier instance",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "c61c2a7b-e5eb-f011-8bd9-a402b9460f22",
+          "name": "FinancialDocumentReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the document (invoice, receipt, voucher, etc.) representing the financial accounting instruction",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "bb820589-e5eb-f011-8bd9-a402b9460f22",
+          "name": "FinancialTransactionReference",
+          "type": "Text",
+          "required": true,
+          "description": "Link to the business transaction (a real-world economic event) that triggered the accounting entry",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "2bbd9012-c2f6-f011-8bdb-a402b9460f22",
+          "name": "TransactionType",
+          "type": "FinancialTransactionTypeValues",
+          "required": true,
+          "description": "",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "575d131a-c2f6-f011-8bdb-a402b9460f22",
+          "name": "DebitAccountIdentification",
+          "type": "AccountIdentification",
+          "required": true,
+          "description": "",
+          "referenceAspect": "iso20022",
+          "referenceName": "AccountIdentification",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/AccountIdentification",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "144f002e-c2f6-f011-8bdb-a402b9460f22",
+          "name": "TransactionAmount",
+          "type": "Amount",
+          "required": true,
+          "description": "",
+          "referenceAspect": "iso20022",
+          "referenceName": "CurrencyAndAmount",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/CurrencyAndAmount",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "9753423a-c2f6-f011-8bdb-a402b9460f22",
+          "name": "TransactionCurrency",
+          "type": "CurrencyCode",
+          "required": true,
+          "description": "",
+          "referenceAspect": "iso20022",
+          "referenceName": "CurrencyCode",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/CurrencyCode",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "5699f15b-c2f6-f011-8bdb-a402b9460f22",
+          "name": "CreditAccountIdentification",
+          "type": "AccountIdentification",
+          "required": true,
+          "description": "",
+          "referenceAspect": "iso20022",
+          "referenceName": "AccountIdentification",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/AccountIdentification",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        },
+        {
+          "id": "94c5d069-c2f6-f011-8bdb-a402b9460f22",
+          "name": "TransactionDate",
+          "type": "DateTime",
+          "required": true,
+          "description": "",
+          "referenceAspect": "iso20022",
+          "referenceName": "ISODateTime",
+          "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:23:51.734Z"
+        }
+      ],
+      "serviceOperations": [
+        {
+          "id": "68ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "6dff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "72ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "77ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.357Z"
+        },
+        {
+          "id": "7cff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        },
+        {
+          "id": "81ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        },
+        {
+          "id": "86ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        },
+        {
+          "id": "8bff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        },
+        {
+          "id": "90ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        },
+        {
+          "id": "95ff91b8-8aec-f011-8bd9-a402b9460f22",
+          "actionTerm": "Activate",
+          "name": "Activate Accounting Instruction Capture Instance Record",
+          "description": "",
+          "linkedLogicIds": [],
+          "x-status": "stable",
+          "x-modified-date": "2026-06-16T06:24:06.358Z"
+        }
+      ],
+      "logic": [],
+      "x-status": "stable"
+    }
+  ],
+  "x-status": "modified",
+  "x-modified-date": "2026-06-16T06:24:07.983Z",
+  "organisation": "BIAN",
+  "version": "14.2.0"
+}
