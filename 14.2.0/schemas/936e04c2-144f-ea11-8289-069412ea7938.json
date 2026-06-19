@@ -8,7 +8,7 @@
   "x-super-type": "f04197d7-0594-e911-823e-069871e4ec9c",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.506Z",
+  "x-modified-date": "2026-06-19T04:37:16.962Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "A lifecycle status indicating the stage in the fulfillment of the arrangement",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.546Z",
+      "x-modified-date": "2026-06-19T04:37:16.991Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
