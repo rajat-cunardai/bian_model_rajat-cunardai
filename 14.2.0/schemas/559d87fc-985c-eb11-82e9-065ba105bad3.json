@@ -8,7 +8,7 @@
   "x-super-type": "f0b986ab-7192-e911-823e-0616b0d596e4",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.501Z",
+  "x-modified-date": "2026-06-19T04:37:16.960Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Amount of money asked or paid for the charge (ISO20022)",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.537Z",
+      "x-modified-date": "2026-06-19T04:37:16.983Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
