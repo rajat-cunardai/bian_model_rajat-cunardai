@@ -8,7 +8,7 @@
   "x-super-type": "6fd7342a-138d-e911-823e-067b7da9d714",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.502Z",
+  "x-modified-date": "2026-06-19T04:37:16.960Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Reference to the Service Network the gateway provides access to\r\n\r\nService Network examples: SWIFT, an ACH",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.538Z",
+      "x-modified-date": "2026-06-19T04:37:16.984Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
