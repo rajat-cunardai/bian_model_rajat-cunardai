@@ -8,7 +8,7 @@
   "x-super-type": null,
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.507Z",
+  "x-modified-date": "2026-06-19T04:37:16.963Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Indication wether a savings account feature option is default deof the default, i.e. valid if no specific arrangements are made",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.550Z",
+      "x-modified-date": "2026-06-19T04:37:16.994Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
