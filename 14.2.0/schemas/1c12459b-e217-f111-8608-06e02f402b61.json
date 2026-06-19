@@ -8,7 +8,7 @@
   "x-super-type": "27c8685d-e217-f111-8608-06e02f402b61",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.505Z",
+  "x-modified-date": "2026-06-19T04:37:16.961Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Conditions that must be satisfied for rollover to be allowed",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.545Z",
+      "x-modified-date": "2026-06-19T04:37:16.989Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
