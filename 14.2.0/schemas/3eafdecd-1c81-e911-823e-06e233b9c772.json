@@ -8,7 +8,7 @@
   "x-super-type": "f0b986ab-7192-e911-823e-0616b0d596e4",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.504Z",
+  "x-modified-date": "2026-06-19T04:37:16.961Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Classification Value classifying an allocation/assignment instruction according to a more detailed specification of the allocation\" \r\n\r\nexamples are: earmark, future allocation, to be applied, recall, valuation to a subject matter.",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.543Z",
+      "x-modified-date": "2026-06-19T04:37:16.987Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
