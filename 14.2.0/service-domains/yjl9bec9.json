@@ -1,862 +1,994 @@
 {
   "id": "yjl9bec9",
   "name": "Session Dialogue",
-  "version": "14.2.0",
-  "x-status": "modified",
   "description": "",
-  "organisation": "BIAN",
   "controlRecord": {
-    "id": "clgmobxq",
+    "id": "8hbufcpn",
     "name": "CR Dialogue Session Procedure Instance Record",
-    "logic": [],
-    "x-status": "stable",
+    "description": "",
     "attributes": [
       {
         "id": "d8a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionProcedureInstanceRecordIdentification",
         "type": "Text",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "A unique reference to an item or an occurrence of Customer Contact Session Procedure",
-        "x-modified-date": "2026-06-16T06:23:51.731Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "d9a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionIdentification",
         "type": "Identifier",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": "unbounded",
+        "isMultiValued": true,
         "description": "A unique identifier representing the active service interaction session initiated by Session Dialogue for execution of the selected banking service.\r\nUsed to track and coordinate the servicing workflow across subsequent interaction steps and backend service invocations.\r\n\r\nA unique identifier assigned to each Dialogue Session to distinguish it from all other sessions. Used for tracking, retrieval, and linking with customer and business activity records.",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/GenericIdentification",
-        "referenceName": "GenericIdentification",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Identification"
+        "relatedBusinessObjectAttrName": "Dialogue Session Identification",
+        "referenceAspect": "iso20022",
+        "referenceName": "GenericIdentification",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/GenericIdentification",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "daa33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionStartDate",
         "type": "DateTime",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The exact timestamp when the dialogue session is initiated (e.g., when a call connects, a chat is opened, or a self-service interaction begins).",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
-        "referenceName": "ISODateTime",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Start Date and Time"
+        "relatedBusinessObjectAttrName": "Dialogue Session Start Date and Time",
+        "referenceAspect": "iso20022",
+        "referenceName": "ISODateTime",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "dba33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionEndDate",
         "type": "DateTime",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The exact timestamp when the dialogue session is concluded (e.g., call ends, chat closed, portal session terminated).",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
-        "referenceName": "ISODateTime",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session End Date and Time"
+        "relatedBusinessObjectAttrName": "Dialogue Session End Date and Time",
+        "referenceAspect": "iso20022",
+        "referenceName": "ISODateTime",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/ISODateTime",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "dca33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionDuration",
         "type": "Duration",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The total elapsed time of the session, typically calculated as the difference between End Time and Start Time (may also include idle/hold time if relevant).",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/duration",
-        "referenceName": "Duration",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Duration"
+        "relatedBusinessObjectAttrName": "Dialogue Session Duration",
+        "referenceAspect": "iso20022",
+        "referenceName": "Duration",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/duration",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "dda33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionStatus",
         "type": "Status",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The current operational state of the initiated service session.\r\nIndicates whether the servicing workflow has been successfully initiated, is in progress, completed, suspended, or failed.\r\n\r\nThe current or final state of the dialogue session, such as:\r\n- Active (ongoing session)\r\n- Closed (successfully completed and logged)\r\n- Pending Follow-up (requires additional action, e.g., callback, escalation, or unresolved issue).",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
-        "referenceName": "Status",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Status"
+        "relatedBusinessObjectAttrName": "Dialogue Session Status",
+        "referenceAspect": "iso20022",
+        "referenceName": "Status",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "dea33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionCustomerorContactPartyReference",
         "type": "InvolvedParty",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to Party who is a specific customer or contact party in session\r\nThe verified and trusted identifier of the authenticated customer. Used by downstream service domains to access customer-related products and services.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session Involvement",
-        "relatedBusinessObjectAttrName": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/288337"
+        "relatedBusinessObjectAttrName": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/288337",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "dfa33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionAuthenticationStatus",
         "type": "Status",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Indicates whether the customers identity has been successfully verified (e.g., authenticated, partially verified, not verified).\r\n\r\nComment: \r\nNote that the authentication level may be elevated during the interaction if needed, with the Contact Handler initiating Party Authentication.",
-        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
-        "referenceName": "Status",
-        "referenceAspect": "iso20022",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Party Authentication",
-        "relatedBusinessObjectAttrName": "Party Authentication Result"
+        "relatedBusinessObjectAttrName": "Party Authentication Result",
+        "referenceAspect": "iso20022",
+        "referenceName": "Status",
+        "referenceUrl": "https://www.iso20022.org/standardsrepository/type/Status",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e0a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionChannelUsed",
         "type": "Channel",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The communication medium through which the customer interacts with the enterprise during the session. Examples include voice call, chat, email, social media message, or self-service portal.\r\n\r\nComment:\r\nA contact could include many sessions which could use different channels and devices.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Used Channel"
+        "relatedBusinessObjectAttrName": "Dialogue Session Used Channel",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e1a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionDeviceUsed",
         "type": "Device",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The hardware or endpoint the customer uses to participate in the session, such as mobile phone, desktop/laptop, tablet, or IVR (interactive voice response) system.\r\n\r\nComment:\r\nA contact could include many sessions which could use different channels and devices.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Device",
-        "relatedBusinessObjectAttrName": "Device Type"
+        "relatedBusinessObjectAttrName": "Device Type",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e2a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "CustomerContactSessionChannelTransitionsReference",
         "type": "Log",
         "required": false,
-        "x-status": "stable",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to the record of any change in the communication channel during a session (e.g., a chat escalated to a phone call), maintaining continuity of the session across multiple channels.\r\n\r\nComment:\r\nA contact consists of one or more sessions. The combination of these sessions is recorded in the contact record, which is then written to the relevant logs, including channel activity, customer event, and servicing event logs",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
-        "relatedBusinessObjectName": "Channel Activity Log"
+        "relatedBusinessObjectName": "Channel Activity Log",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e3a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionLog",
         "type": "Log",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "A complete record of the conversation during the session, including chat messages, call notes, emails, or any other exchanged content. It captures both customer and agent/bot contributions for reference, analysis, and compliance.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Log"
+        "relatedBusinessObjectAttrName": "Dialogue Session Log",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e4a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionIntentsDetected",
         "type": "Text",
         "required": false,
-        "x-status": "stable",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The purpose, need, or goal identified from the customer’s inputs during the session. Examples include request for information, complaint, order placement, or troubleshooting. This is typically determined using structured forms, NLP (natural language processing), or agent recognition.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Purpose"
+        "relatedBusinessObjectAttrName": "Dialogue Purpose",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e5a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionActions",
         "type": "Action",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": "unbounded",
+        "isMultiValued": true,
         "description": "Tasks executed during the session, such as processing service requests, placing orders, delivering notifications, or updating customer data.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Requested Action"
+        "relatedBusinessObjectAttrName": "Dialogue Session Requested Action",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e6a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionOutcomes",
         "type": "DialogueSessionRequestedActionOutcomeStatusTypeValues",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The results of these actions, including session resolution status (resolved, pending, escalated), customer satisfaction, and any triggers for future interactions.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session",
-        "relatedBusinessObjectAttrName": "Dialogue Session Outcome"
+        "relatedBusinessObjectAttrName": "Dialogue Session Outcome",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e7a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionAgentReference",
         "type": "InvolvedParty",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to Party (human or even virtual agent/bot) managing the session.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
         "relatedBusinessObjectName": "Dialogue Session Involvement",
-        "relatedBusinessObjectAttrName": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/288337"
+        "relatedBusinessObjectAttrName": "rwc:62b9b895-a35f-9e84-91b3-24d8bf52b876/288337",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e8a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "CustomerContactReference",
         "type": "Text",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to the Customer Contact witch launches a Session Dialogue \r\n\r\nComment: Contact Handler SD is responsible to manage the Customer Contact.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z",
-        "relatedBusinessObjectName": "Customer Contact"
+        "relatedBusinessObjectName": "Customer Contact",
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "e9a33ac2-3642-f111-8be6-a402b9460f22",
         "name": "DialogueSessionProcedureInstanceRecordIdentificationIssuerReference",
         "type": "InvolvedParty",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to a Party that assigns the identification.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "cf960645-1559-f111-8be8-a402b9460f22",
         "name": "CustomerProductReference",
         "type": "Product Agreement",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "Reference to the customer product selected or associated with the requested service interaction.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "bcefcae0-1559-f111-8be8-a402b9460f22",
         "name": "SelectedService",
         "type": "Service Selection",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "he banking service determined by Contact Handler as the requested and eligible service to be executed for the customer. Defines the servicing workflow that Session Dialogue must orchestrate.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       },
       {
         "id": "00b906e7-1559-f111-8be8-a402b9460f22",
         "name": "SelectedRouting",
         "type": "Routing Selection",
         "required": true,
-        "x-status": "stable",
+        "minOccurs": 1,
+        "maxOccurs": 1,
+        "isMultiValued": false,
         "description": "The servicing mode determined during interaction evaluation, indicating how the customer interaction should proceed. Examples include self-service, assisted service, or escalation to a servicing representative.",
-        "x-modified-date": "2026-06-16T06:23:51.731Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:37:37.255Z"
       }
     ],
-    "description": "",
     "serviceOperations": [
       {
         "id": "cea33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Initiate Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Initiate",
+        "name": "Initiate Dialogue Session Procedure Instance Record",
         "description": "REST: Post",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "cfa33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Update Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Update",
+        "name": "Update Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d0a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Capture Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Capture",
+        "name": "Capture Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d1a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Execute Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Execute",
+        "name": "Execute Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d2a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Request Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Request",
+        "name": "Request Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d3a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Control Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Control",
+        "name": "Control Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.343Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d4a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Exchange Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Exchange",
+        "name": "Exchange Dialogue Session Procedure Instance Record",
         "description": "REST: Put",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.344Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d5a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Retrieve Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Retrieve",
+        "name": "Retrieve Dialogue Session Procedure Instance Record",
         "description": "REST: Get",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.344Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       },
       {
         "id": "d6a33ac2-3642-f111-8be6-a402b9460f22",
-        "name": "Notify Dialogue Session Procedure Instance Record",
-        "x-status": "stable",
         "actionTerm": "Notify",
+        "name": "Notify Dialogue Session Procedure Instance Record",
         "description": "REST: Get",
         "linkedLogicIds": [],
-        "x-modified-date": "2026-06-16T06:24:06.344Z"
+        "x-status": "stable",
+        "x-modified-date": "2026-06-19T04:38:02.745Z"
       }
-    ]
+    ],
+    "logic": [],
+    "x-status": "stable"
   },
-  "x-modified-date": "2026-06-16T06:24:07.983Z",
   "behaviourQualifiers": [
     {
-      "id": "shoimibe",
+      "id": "vynthiwu",
       "name": "BQ Product or Service Invocation Instance Record",
-      "logic": [],
-      "x-status": "stable",
+      "qualifierType": "",
+      "description": "This is the step in the Dialouge Session procedure where the session executes actions or retrieves data related to the customers requested products or services.\r\n\r\n\r\n** General comment **\r\nThe Product or Service invocation BQ, having confirmed that the party has the authority and has been authentication will present service access available to a selected product or service. It is assumed that this will include displaying what kind of product services might be available for the customer/party to select from.",
       "attributes": [
         {
           "id": "82e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "A unique reference to an item or an occurrence of Product or Service Invocation Workstep",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Identification"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Identification",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "83e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationProductorServiceReference",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Reference to specific instance of the product/service to operate on.\r\n\r\nDirects the action to the product instance",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Product or Service Reference"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Product or Service Reference",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "84e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationProductorServiceType",
           "type": "ProductAgreementTypeValues",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Type of product/service being acted on\r\n\r\nHelps the invocation logic select the correct service domain e.g. currentg account, savings account, credit card, loan, investment, etc.",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Product or Service Reference"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Product or Service Reference",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "85e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationRequestedAction",
           "type": "Action",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Type of action requested\r\n\r\nDetermines whether to retrieve data, execute transaction, or update profile e.g., Retrieval (balance, statement), transaction (payment, transfer), update (profile, preferences).\r\n\r\n** General comment **\r\nWe would expect that part of the interaction between the access BQ and the product fulfillment Service Domain would be to present what types of access the customer might be able to use (this would be product specific and might be filtered based on the level of authentication and authorization that the customer has established during the contact )",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Type"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "86e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationActionParameters",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": "unbounded",
+          "isMultiValued": true,
           "description": "Input values for the requested action\r\n\r\nProvides all necessary details for execution e.g., amount, recipient, date, payment method, or other service-specific inputs.",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Reference"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Reference",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "87e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "DialogueSessionProcedureInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "A unique reference to an item or an occurrence of Dialogue Session Procedure",
-          "x-modified-date": "2026-06-16T06:23:51.731Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "88e4a2f7-3642-f111-8be6-a402b9460f22",
           "name": "ProductorServiceInvocationRequestedActionResult",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Result of the requested action\r\n\r\nTo return structured results to the customer session for display, communication, or next-step decisioning.",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Product or Service Invocation",
-          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Outcome Status"
+          "relatedBusinessObjectAttrName": "Product or Service Invocation Requested Action Outcome Status",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         }
       ],
-      "description": "This is the step in the Dialouge Session procedure where the session executes actions or retrieves data related to the customers requested products or services.\r\n\r\n\r\n** General comment **\r\nThe Product or Service invocation BQ, having confirmed that the party has the authority and has been authentication will present service access available to a selected product or service. It is assumed that this will include displaying what kind of product services might be available for the customer/party to select from.",
-      "qualifierType": "",
       "serviceOperations": [
         {
           "id": "78e4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Initiate Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Initiate",
+          "name": "Initiate Product or Service Invocation Instance Record",
           "description": "REST: Post",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "79e4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Update Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Update",
+          "name": "Update Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7ae4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Capture Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Capture",
+          "name": "Capture Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7be4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Execute Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Execute",
+          "name": "Execute Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7ce4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Request Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Request",
+          "name": "Request Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7de4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Control Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Control",
+          "name": "Control Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7ee4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Exchange Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Exchange",
+          "name": "Exchange Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "7fe4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Retrieve Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Retrieve",
+          "name": "Retrieve Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "80e4a2f7-3642-f111-8be6-a402b9460f22",
-          "name": "Notify Product or Service Invocation Instance Record",
-          "x-status": "stable",
           "actionTerm": "Notify",
+          "name": "Notify Product or Service Invocation Instance Record",
           "description": "",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         }
-      ]
+      ],
+      "logic": [],
+      "x-status": "stable"
     },
     {
-      "id": "aj50thy0",
+      "id": "e39849un",
       "name": "BQ Order Instance Record",
-      "logic": [],
-      "x-status": "stable",
+      "qualifierType": "",
+      "description": "A course of action for doing Order Invocation in the context of executing the <CR>",
       "attributes": [
         {
           "id": "f4d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "DialogueSessionProcedureInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Unique identifier of a control record instance",
-          "x-modified-date": "2026-06-16T06:23:51.731Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "f5d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "OrderInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Unique identifier of a behavior qualifier instance",
-          "x-modified-date": "2026-06-16T06:23:51.731Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "f6d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "SessionContext",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Continuity of the live customer conversation\r\n\r\nSession Context is the complete, time-bound representation of an active customer interaction, capturing the conversational state, historical exchanges, and correlation identifiers that ensure continuity of the dialogue across multiple service invocations.\r\n\r\nIt represents what is happening right now in the customer conversation, including:\r\nWhere the customer is in the journey\r\nWhat has already been asked/answered\r\nWhat decisions have been made so far\r\nThe identity of the interaction thread",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Order",
-          "relatedBusinessObjectAttrName": "Session Context"
+          "relatedBusinessObjectAttrName": "Session Context",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "f7d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "CustomerData",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Identity and personal attributes of the customer\r\n\r\nCustomer Data is the structured and semi-structured set of personal, demographic, and identifying attributes provided or confirmed during the interaction, used to uniquely identify and assess a natural or legal person.\r\n\r\nIt represents:\r\n\r\nWho the customer is\r\nWhat we know about them\r\nWhat they claim their identity is\r\n\r\nTypical elements include:\r\nName\r\nDate of birth\r\nNational identifiers (SSN, passport, ID)\r\nAddress and contact details",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Order",
-          "relatedBusinessObjectAttrName": "Customer Data"
+          "relatedBusinessObjectAttrName": "Customer Data",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "f8d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "OrderType",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Classification of the structured business request\r\n\r\nOrder Type is the formal classification of a business request that defines the nature, structure, and lifecycle behavior of the downstream process to be executed by a service domain.\r\n\r\nIt defines:\r\n\r\nWhat kind of business outcome is being requested\r\n\r\nExamples:\r\n\r\nCustomerOnboardingOrder\r\nAccountOpeningOrder\r\nCreditApplicationOrder",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Order",
-          "relatedBusinessObjectAttrName": "Order Type"
+          "relatedBusinessObjectAttrName": "Order Type",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "f9d4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "ChannelContext",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Medium and environment of customer interaction\r\n\r\nChannel Context is the representation of the customers interaction medium and delivery environment, capturing how and through which service channel the customer is engaging with the bank.\r\n\r\nIt answers:\r\n\r\nWhere and how is the customer interacting with us?\r\n\r\nExamples:\r\n\r\nBranch\r\nMobile app\r\nOnline banking portal\r\nCall center\r\nAPI / partner channel",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Order",
-          "relatedBusinessObjectAttrName": "Channel Context"
+          "relatedBusinessObjectAttrName": "Channel Context",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "fad4b873-0860-f111-bb43-02a3a8feffeb",
           "name": "WorkflowIntent",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Desired business outcome from the customers perspective\r\n\r\nWorkflow Intent is the explicit business objective derived from the customers request and interaction context, representing the desired end-state or outcome the customer expects the organization to deliver.\r\n\r\nIt captures:\r\n\r\nWhat does the customer want to achieve?\r\n\r\nExamples:\r\n\r\nOpen a new bank account\r\nBecome a new customer\r\nUpdate customer identity details\r\nRequest financial onboarding approval",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Order",
-          "relatedBusinessObjectAttrName": "Workflow Intent"
+          "relatedBusinessObjectAttrName": "Workflow Intent",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         }
       ],
-      "description": "A course of action for doing Order Invocation in the context of executing the <CR>",
-      "qualifierType": "",
       "serviceOperations": [
         {
           "id": "ead4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Initiate Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Initiate",
+          "name": "Initiate Order Instance Record",
           "description": "REST: Post",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "ebd4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Update Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Update",
+          "name": "Update Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "ecd4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Capture Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Capture",
+          "name": "Capture Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "edd4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Execute Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Execute",
+          "name": "Execute Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "eed4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Request Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Request",
+          "name": "Request Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "efd4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Control Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Control",
+          "name": "Control Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "f0d4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Exchange Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Exchange",
+          "name": "Exchange Order Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "f1d4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Retrieve Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Retrieve",
+          "name": "Retrieve Order Instance Record",
           "description": "REST: Get",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "f2d4b873-0860-f111-bb43-02a3a8feffeb",
-          "name": "Notify Order Instance Record",
-          "x-status": "stable",
           "actionTerm": "Notify",
+          "name": "Notify Order Instance Record",
           "description": "REST: Get",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.343Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         }
-      ]
+      ],
+      "logic": [],
+      "x-status": "stable"
     },
     {
-      "id": "h47epwhu",
+      "id": "vgbrf8st",
       "name": "BQ Onboarding Instance Record",
-      "logic": [],
-      "x-status": "stable",
+      "qualifierType": "",
+      "description": "A course of action for doing Onboarding in the context of executing the <CR>\r\n\r\nOnboarding is the behavior qualifier responsible for managing the customer interaction associated with establishing a new party relationship with the institution, including the collection, validation, presentation, and submission of information required to initiate and support the customer onboarding process performed by Party Lifecycle Management SD.",
       "attributes": [
         {
           "id": "9e706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "DialogueSessionProcedureInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Unique identifier of a control record instance",
-          "x-modified-date": "2026-06-16T06:23:51.731Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "9f706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "OnboardingInstanceRecordIdentification",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Unique identifier of a behavior qualifier instance",
-          "x-modified-date": "2026-06-16T06:23:51.731Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a0706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "OnboardingSessionReference",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Information used to identify, correlate, and manage the onboarding interaction within the customer dialogue session. It provides the context for tracking the onboarding journey from initiation to completion. Example: Session ID: SD-12345, Onboarding Session ID: ONB-001, Status: Information Gathering, Channel: Mobile Banking",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Onboarding Session Reference"
+          "relatedBusinessObjectAttrName": "Onboarding Session Reference",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a1706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "ProspectivePartyInformation",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "The personal, demographic, and relationship information collected from a prospective customer to establish their identity and support the creation of a party record. Example: Name: John Smith, Date of Birth: 15-May-1988, Nationality: Belgian, Residential Address: 10 Main Street, Brussels",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Prospective Party Information"
+          "relatedBusinessObjectAttrName": "Prospective Party Information",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a2706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "IdentificationInformation",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "The information describing the identity credentials and supporting documents provided by the prospective customer for identity verification purposes. Example: Passport Number: AB123456, Issuing Country: Belgium, Expiry Date: 15-May-2032",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Identification Information"
+          "relatedBusinessObjectAttrName": "Identification Information",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a3706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "ContactandCommunicationPreferences",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "The information defining how the prospective customer can be contacted and how they prefer to receive communications from the institution. Example: Email: john.smith@email.com, Mobile: +32xxxxxxx, Preferred Language: English, Preferred Contact Method: Email",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Contact and Communication Preferences"
+          "relatedBusinessObjectAttrName": "Contact and Communication Preferences",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a4706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "OnboardingRequirementsStatus",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "Information used to monitor the completion and validation status of the information, documents, and declarations required before the onboarding request can be submitted for processing. Example: Identity Documents: Complete, Address Verification: Pending, Submission Ready: No",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Onboarding Requirements Status"
+          "relatedBusinessObjectAttrName": "Onboarding Requirements Status",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a5706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "PLMInvocationInformation",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "The details associated with the submission of the onboarding request from Session Dialogue SD to Party Lifecycle Management SD, including references used for tracking and correlation. Example: Request ID: PLM-78901, Invocation Date: 04-Jun-2026, Correlation ID: CORR-45678, Status: Submitted",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "PLM Invocation Information"
+          "relatedBusinessObjectAttrName": "PLM Invocation Information",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         },
         {
           "id": "a6706cdb-0b60-f111-bb43-02a3a8feffeb",
           "name": "OnboardingOutcomeInformation",
           "type": "Text",
           "required": true,
-          "x-status": "stable",
+          "minOccurs": 1,
+          "maxOccurs": 1,
+          "isMultiValued": false,
           "description": "The information returned by Party Lifecycle Management SD describing the result of the onboarding process and any resulting party identifiers or next actions. Example: Party ID: P123456, Onboarding Status: Approved, Risk Rating: Low, Next Action: Open Current Account",
-          "x-modified-date": "2026-06-16T06:23:51.731Z",
           "relatedBusinessObjectName": "Onboarding",
-          "relatedBusinessObjectAttrName": "Onboarding Outcome Information"
+          "relatedBusinessObjectAttrName": "Onboarding Outcome Information",
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:37:37.255Z"
         }
       ],
-      "description": "A course of action for doing Onboarding in the context of executing the <CR>\r\n\r\nOnboarding is the behavior qualifier responsible for managing the customer interaction associated with establishing a new party relationship with the institution, including the collection, validation, presentation, and submission of information required to initiate and support the customer onboarding process performed by Party Lifecycle Management SD.",
-      "qualifierType": "",
       "serviceOperations": [
         {
           "id": "94706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Initiate Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Initiate",
+          "name": "Initiate Onboarding Instance Record",
           "description": "REST: Post",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "95706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Update Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Update",
+          "name": "Update Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.745Z"
         },
         {
           "id": "96706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Capture Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Capture",
+          "name": "Capture Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "97706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Execute Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Execute",
+          "name": "Execute Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "98706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Request Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Request",
+          "name": "Request Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "99706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Control Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Control",
+          "name": "Control Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "9a706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Exchange Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Exchange",
+          "name": "Exchange Onboarding Instance Record",
           "description": "REST: Put",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "9b706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Retrieve Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Retrieve",
+          "name": "Retrieve Onboarding Instance Record",
           "description": "REST: Get",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         },
         {
           "id": "9c706cdb-0b60-f111-bb43-02a3a8feffeb",
-          "name": "Notify Onboarding Instance Record",
-          "x-status": "stable",
           "actionTerm": "Notify",
+          "name": "Notify Onboarding Instance Record",
           "description": "REST: Get",
           "linkedLogicIds": [],
-          "x-modified-date": "2026-06-16T06:24:06.344Z"
+          "x-status": "stable",
+          "x-modified-date": "2026-06-19T04:38:02.746Z"
         }
-      ]
+      ],
+      "logic": [],
+      "x-status": "stable"
     }
-  ]
+  ],
+  "x-status": "modified",
+  "x-modified-date": "2026-06-19T04:38:05.186Z",
+  "organisation": "BIAN",
+  "version": "14.2.0"
 }
