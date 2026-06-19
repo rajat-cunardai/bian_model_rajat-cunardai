@@ -8,7 +8,7 @@
   "x-super-type": "0b1bb11e-6bcd-e911-8296-067c35430898",
   "x-status": "stable",
   "x-modified-by": null,
-  "x-modified-date": "2026-06-16T06:23:04.499Z",
+  "x-modified-date": "2026-06-19T04:37:16.959Z",
   "x-position": null,
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
       "description": "Defines the type of settlement process (e.g. scheduled processing, ad-hoc processing)",
       "x-status": "stable",
       "x-modified-by": null,
-      "x-modified-date": "2026-06-16T06:23:04.533Z",
+      "x-modified-date": "2026-06-19T04:37:16.980Z",
       "x-previous-value": null,
       "x-multi-valued": false,
       "x-is-unique": true,
